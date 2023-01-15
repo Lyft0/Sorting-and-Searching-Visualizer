@@ -9,15 +9,15 @@ async function merge(bar, low, mid, high) {
     await waitforme(delay);
     bar[low + i].style.background = "red";
     left[i] = bar[low + i].style.height;
-    playNote(300 + array[j] * 2);
-    playNote(300 + array[j] * 2);
+    playNote(300 + array[i] * 2);
+    playNote(300 + array[i] * 2);
   }
   for (let i = 0; i < n2; i++) {
     await waitforme(delay);
     bar[mid + 1 + i].style.background = "blue";
     right[i] = bar[mid + 1 + i].style.height;
-    playNote(300 + array[j] * 2);
-    playNote(300 + array[j] * 2);
+    playNote(300 + array[i] * 2);
+    playNote(300 + array[i] * 2);
   }
   await waitforme(delay);
   let i = 0,
@@ -46,8 +46,8 @@ async function merge(bar, low, mid, high) {
       j++;
       k++;
     }
-    playNote(300 + array[j] * 2);
-    playNote(300 + array[j] * 2);
+    playNote(300 + array[i] * 2);
+    playNote(300 + array[i] * 2);
   }
   while (i < n1) {
     await waitforme(delay);

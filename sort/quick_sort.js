@@ -20,8 +20,8 @@ async function partition(ele, l, r) {
   i++;
   await waitforme(delay);
   swap(ele[i], ele[r]);
-  playNote(300 + array[j] * 2);
-  playNote(300 + array[j] * 2);
+  playNote(300 + array[i] * 2);
+  playNote(300 + array[i] * 2);
   ele[r].style.background = "orange";
   ele[i].style.background = "green";
 
