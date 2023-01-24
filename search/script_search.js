@@ -1,4 +1,6 @@
 var array = [];
+
+// array bar
 var selectedBar;
 var targetBar;
 var bar;
@@ -116,6 +118,7 @@ function displayTime(time, notation) {
   document.querySelector("#notation").innerHTML = notation;
 }
 
+// select bar
 function selectBar() {
   for (i of bar) {
     i.addEventListener("click", chooseClick, false);

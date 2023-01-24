@@ -1,5 +1,7 @@
+// array kosong
 var array = [];
 
+// algoritma suara
 let audioCtx = null;
 
 function playNote(freq) {
@@ -20,10 +22,12 @@ function playNote(freq) {
   node.connect(audioCtx.destination);
 }
 
+// membuat array baru
 function createArray(n = 30) {
   clearBar();
   resetTime();
   resetAlgo();
+  // looping untuk buat angka random
   for (let i = 0; i < n; i++) {
     array[i] = Math.random() * 130 + 2;
   }
@@ -38,6 +42,7 @@ function createArray(n = 30) {
   }
 }
 
+// menghapus seluruh html
 function clearBar() {
   const bars = document.querySelector(".container");
   bars.innerHTML = "";
@@ -58,7 +63,7 @@ function waitforme(milisec) {
   });
 }
 
-// size
+// size sliderrr
 let size = document.querySelector("#arr_size");
 size.addEventListener("input", function () {
   createArray(parseInt(size.value));
@@ -71,6 +76,7 @@ delayElement.addEventListener("input", function () {
   delay = 310 - parseInt(delayElement.value);
 });
 
+// Proses dari web
 createArray();
 
 const newArray = document.querySelector("#new_arr");
