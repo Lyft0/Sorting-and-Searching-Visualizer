@@ -6,7 +6,7 @@ Sorting Algorithm :<br>
 3. Merge Sort<br>
 4. Insertion Sort<br>
 5. Quick Sort<br>
-<br>
+
 Searching Algorithm :<br>
 1. Linear Search<br>
 2. Binary Search<br>
