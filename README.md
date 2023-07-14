@@ -18,7 +18,6 @@ Sorting Algorithm :<br>
 Searching Algorithm :<br>
 1. Linear Search<br>
 2. Binary Search<br>
-<br>
 
 ## How it looks?
 Sorting visualizer :<br>
